@@ -1,4 +1,4 @@
-# Base para a atividade 02 de LP1
+# Projeto Concordo
 
 Projeto "Concordo" da disciplina de Linguagem de Pogramação I.
 A atividade consiste de criar um sistema com funções semelhantes ao Discord, mas que vai funcionar somente em modo texto e sem recursos de rede.
