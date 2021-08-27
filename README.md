@@ -2,7 +2,7 @@
 
 Projeto "Concordo" da disciplina de Linguagem de Pogramação I.
 A atividade consiste de criar um sistema com funções semelhantes ao Discord, mas que vai funcionar somente em modo texto e sem recursos de rede.
-A ideia principal é simular o “backend” de um serviço com o Discord.
+A ideia principal é simular o “backend” de um serviço como o Discord.
 
 ## Para compilar
 
