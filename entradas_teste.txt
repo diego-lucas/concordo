@@ -1,1 +1,1 @@
-list-messages 1
+create-user teste2@gmail.com 123 Teste2

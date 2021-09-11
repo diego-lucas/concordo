@@ -27,9 +27,10 @@ string Sistema::create_user(const string email, const string senha, const string
 		return "E-mail já cadastrado no sistema.";
 
 	cursor.exec("INSERT INTO projeto.usuarios (email, nome, senha) VALUES (" + cursor.quote(email) + ", " + cursor.quote(nome) + ", " + cursor.quote(senha) + ");");
+	int id_usuario = cursor.exec("SELECT id FROM projeto.usuarios WHERE email = " + cursor.quote(email))[0][0].as<int>();
 	cursor.commit();
 
-	return "Usuario criado com sucesso";
+	return "Usuario criado com sucesso, ID: " + to_string(id_usuario);
 }
 
 string Sistema::login(const string email, const string senha)
