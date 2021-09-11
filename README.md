@@ -6,7 +6,14 @@ A ideia principal é simular o “backend” de um serviço como o Discord.
 
 ## Para compilar
 
-Use o comando abaixo:
+Antes de compilar, é necessário instalar a biblioteca libpqxx, com o comando:
+
+```console
+sudo apt install libpqxx-6.4 libpqxx-dev
+```
+
+Para saber mais sobre a biblioteca, acesse: http://pqxx.org/development/libpqxx/
+E então, para compilar use o comando abaixo:
 
 ```console
 mkdir build
