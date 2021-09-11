@@ -1,17 +1,1 @@
-create-user diego@gmail.com senha123 Diego
-create-user rafa@gmail.com senha123 Rafa
-create-user joao@gmail.com senha123 Joao
-login diego@gmail.com senha123
-login rafa@gmail.com senha123
-login joao@gmail.com senha123
-create-server 1 servidor1
-create-server 1 servidor2
-enter-server 1 servidor1
-enter-server 2 servidor2
-enter-server 3 servidor1
-create-channel 1 canaltexto1
-enter-channel 1 canaltexto1
-list-usuarios-logados 1
-send-message 1 Oi pessoal querem TC?
-send-message 1 Alguém ai?
 list-messages 1

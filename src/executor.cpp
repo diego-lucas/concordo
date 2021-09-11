@@ -119,11 +119,6 @@ string Executor::processarLinha(string linha)
 			return sistema->list_servers(id);
 		}
 
-		else if (nomeComando == "list-usuarios-logados")
-		{
-			return sistema->list_usuarios_logados(id);
-		}
-
 		else if (nomeComando == "remove-server")
 		{
 			string nome;

@@ -1,23 +1,16 @@
 #ifndef SISTEMA_H
 #define SISTEMA_H
-#include <vector>
 #include <string>
-#include <iostream>
-#include <map>
-
-#include "usuario.h"
-#include "servidor.h"
-#include "canaltexto.h"
+#include <pqxx/pqxx>
 
 // Sistema deve concentrar todas as operações do Concordo
 class Sistema
 {
-private:
-	std::vector<Servidor> servidores;									//<! um vetor com todos os servidores
-	std::vector<Usuario> usuarios;										//<! um vetor com todos os usuários cadastrados
-	std::map<int, std::pair<std::string, std::string>> usuariosLogados; //<! um vetor contendo os usuários que logaram no sistema
+	// private:
+	// 	pqxx::connection conn;
 
 public:
+	// Sistema();
 	/*! Encerra o funcionamento do Concordo, o programa termina ao executar este comando.
 				@return uma string com a mensagem "Saindo.."
 		*/
@@ -39,9 +32,6 @@ public:
 				@return uma string contendo uma mensagem de erro ou "Logado como <email>!"
 		*/
 	std::string login(const std::string email, const std::string senha);
-
-	// Lista os usuarios logado no map usuariosLogados
-	std::string list_usuarios_logados(int id);
 
 	/*! Desconecta um usuário específico do sistema, removendo a informação daquele usuário da 
 				tabela Sistema::usuariosLogados. A função retorna uma mensagem de sucesso ou de erro 
